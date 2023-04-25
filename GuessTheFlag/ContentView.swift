@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  GuessTheFlag
-//
-//  Created by Tobi Oguntuase on 3/2/23.
-//
-
 import SwiftUI
 
 struct ContentView: View {
