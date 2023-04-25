@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var players = ["Lebron James","Stephen Curry","Kyire Irving","Michael Jordan","Kawhi Leonard","Klay Thompson","Luka Doncic","Damian Lillard","Russell Westbrook","Giannis Antetokounmpo","Kobe Bryant"].shuffled()
+    @State private var players = ["Damian", "Giannis", "Kawhi", "Klay", "Kobe", "Kyrie", "Lebron", "Luka", "Michael", "Russell", "Shaq", "Stephen"].shuffled()
     @State private var correctAnswer = Int.random(in: 0...2)
     @State private var showingScore = false
     @State private var scoreTitle = ""
