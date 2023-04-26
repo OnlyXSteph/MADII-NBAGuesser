@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7E3CF81229B15A230035C91B /* GuessTheFlag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessTheFlag.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E3CF81229B15A230035C91B /* GuessThePlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessThePlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E3CF81529B15A230035C91B /* NBAGuesser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBAGuesser.swift; sourceTree = "<group>"; };
 		7E3CF81729B15A230035C91B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7E3CF81929B15A250035C91B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -37,7 +37,7 @@
 		7E3CF80929B15A230035C91B = {
 			isa = PBXGroup;
 			children = (
-				7E3CF81429B15A230035C91B /* GuessTheFlag */,
+				7E3CF81429B15A230035C91B /* GuessThePlayer */,
 				7E3CF81329B15A230035C91B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,12 +45,12 @@
 		7E3CF81329B15A230035C91B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7E3CF81229B15A230035C91B /* GuessTheFlag.app */,
+				7E3CF81229B15A230035C91B /* GuessThePlayer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7E3CF81429B15A230035C91B /* GuessTheFlag */ = {
+		7E3CF81429B15A230035C91B /* GuessThePlayer */ = {
 			isa = PBXGroup;
 			children = (
 				90F0E96829F979F7009E0D53 /* StartScreen.swift */,
@@ -59,7 +59,7 @@
 				7E3CF81929B15A250035C91B /* Assets.xcassets */,
 				7E3CF81B29B15A250035C91B /* Preview Content */,
 			);
-			path = GuessTheFlag;
+			path = GuessThePlayer;
 			sourceTree = "<group>";
 		};
 		7E3CF81B29B15A250035C91B /* Preview Content */ = {
@@ -73,9 +73,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7E3CF81129B15A230035C91B /* GuessTheFlag */ = {
+		7E3CF81129B15A230035C91B /* GuessThePlayer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7E3CF82029B15A250035C91B /* Build configuration list for PBXNativeTarget "GuessTheFlag" */;
+			buildConfigurationList = 7E3CF82029B15A250035C91B /* Build configuration list for PBXNativeTarget "GuessThePlayer" */;
 			buildPhases = (
 				7E3CF80E29B15A230035C91B /* Sources */,
 				7E3CF80F29B15A230035C91B /* Frameworks */,
@@ -85,9 +85,9 @@
 			);
 			dependencies = (
 			);
-			name = GuessTheFlag;
+			name = GuessThePlayer;
 			productName = GuessTheFlag;
-			productReference = 7E3CF81229B15A230035C91B /* GuessTheFlag.app */;
+			productReference = 7E3CF81229B15A230035C91B /* GuessThePlayer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -105,7 +105,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7E3CF80D29B15A230035C91B /* Build configuration list for PBXProject "GuessTheFlag" */;
+			buildConfigurationList = 7E3CF80D29B15A230035C91B /* Build configuration list for PBXProject "GuessThePlayer" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -118,7 +118,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7E3CF81129B15A230035C91B /* GuessTheFlag */,
+				7E3CF81129B15A230035C91B /* GuessThePlayer */,
 			);
 		};
 /* End PBXProject section */
@@ -322,7 +322,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7E3CF80D29B15A230035C91B /* Build configuration list for PBXProject "GuessTheFlag" */ = {
+		7E3CF80D29B15A230035C91B /* Build configuration list for PBXProject "GuessThePlayer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7E3CF81E29B15A250035C91B /* Debug */,
@@ -331,7 +331,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7E3CF82029B15A250035C91B /* Build configuration list for PBXNativeTarget "GuessTheFlag" */ = {
+		7E3CF82029B15A250035C91B /* Build configuration list for PBXNativeTarget "GuessThePlayer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7E3CF82129B15A250035C91B /* Debug */,
