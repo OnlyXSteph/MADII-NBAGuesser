@@ -16,15 +16,13 @@ struct StartScreen: View {
                     .resizable()
                     .edgesIgnoringSafeArea(.all)
                 VStack {
-                    Text("Play Game")
+                   Text("Guess the Player")
                         .foregroundColor(Color.white)
                         .multilineTextAlignment(.center)
                         .padding(.all)
                         .font(.system(size: 65))
                         .shadow(color: Color.black,
                                 radius: 4, x: 6.5 , y: 6.5)
-                    
-        
                     
                     NavigationLink(destination: ContentView(), label: {
                         Image(systemName: "play.circle")
