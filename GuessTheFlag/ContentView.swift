@@ -14,18 +14,25 @@ struct ContentView: View {
         
         ZStack {
             RadialGradient(stops: [
-                .init(color: Color(red: 0.1, green: 0.2, blue: 0.45), location: 0.3),
-                .init(color: Color(red: 0.76, green: 0.15, blue: 0.26), location: 0.3),
+                .init(color: Color(red: 0.8, green: 0.2, blue: 0.2),
+                     location: 0.99),
+                .init(color: Color(red: 0.1, green: 0.0, blue: 0.5),
+                      location: 0.99),
             ], center: .top, startRadius: 200, endRadius: 400)
-            .ignoresSafeArea()
+                .ignoresSafeArea()
+            
             VStack {
                 Spacer()
+                
                 Text("Guess the Player")
                     .font(.largeTitle.weight(.bold))
                     .foregroundColor(.white)
+                Spacer()
+                Spacer()
+                
                 VStack(spacing: 15) {
                     VStack {
-                        Text("Which one is ")
+                        Text("Which player is ")
                             .font(.subheadline.weight(.heavy))
                             .foregroundColor(.white)
                         
@@ -36,7 +43,7 @@ struct ContentView: View {
                     }
                     
                     ForEach(0..<3) { number in
-                        Button{
+                        Button {
                             flagTapped(number)
                         } label: {
                             Image(players[number])
@@ -54,8 +61,8 @@ struct ContentView: View {
                 Spacer()
                 Spacer()
                 
-                Text("Score: \(playerScore)")
-                    .foregroundStyle(.secondary)
+                Text("Current Score: \(playerScore)")
+                    .foregroundStyle(.white)
                     .font(.title.bold())
                 
                 Spacer()
