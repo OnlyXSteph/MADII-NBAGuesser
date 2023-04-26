@@ -30,31 +30,35 @@ struct ContentView: View {
                 Spacer()
                 Spacer()
                 
-                VStack(spacing: 15) {
+                VStack(spacing: 20) {
                     VStack {
-                        Text("Which player is ")
-                            .font(.subheadline.weight(.heavy))
-                            .foregroundColor(.white)
                         
-                        Text(players[correctAnswer])
-                            .font(.largeTitle.weight(.semibold))
-                            .foregroundColor(.white)
+                        Text("Which of these is ")
+                            .font(.title.weight(.semibold))
+                            .foregroundColor(.black)
+                            .padding(.top)
+                        
+                        Text(players[correctAnswer] + "?")
+                            .font(.title.weight(.semibold))
+                            .foregroundColor(.black)
                         
                     }
                     
                     ForEach(0..<3) { number in
                         Button {
-                            flagTapped(number)
+                            playerTapped(number)
                         } label: {
                             Image(players[number])
                                 .renderingMode(.original)
-                                .clipShape(Capsule())
+                                .clipShape(RoundedRectangle(cornerRadius: 10))
                                 .shadow(radius: 5)
+                                
                         }
                     }
                 }
                 .frame(maxWidth: .infinity)
-                .padding(.vertical, 20)
+                .padding(.bottom)
+                .padding(.vertical, 25)
                 .background(.regularMaterial)
                 .clipShape(RoundedRectangle(cornerRadius: 20))
                 
@@ -73,15 +77,15 @@ struct ContentView: View {
             .alert(scoreTitle, isPresented: $showingScore) {
                 Button("Continue", action: askQuestion)
             } message : {
-                Text("Your score is \(playerScore)")
+                Text("Your score is now \(playerScore).")
             }
         }
-    func flagTapped(_ number: Int) {
+    func playerTapped(_ number: Int) {
         if number == correctAnswer{
-            scoreTitle = "Correct"
+            scoreTitle = "Correct!"
             playerScore += 1
         } else {
-            scoreTitle = "Wrong, that's \(players[number])"
+            scoreTitle = "Wrong, that's \(players[number])!"
             playerScore -= 1
         }
         showingScore = true

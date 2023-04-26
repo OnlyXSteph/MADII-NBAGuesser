@@ -20,7 +20,7 @@ struct StartScreen: View {
                         .foregroundColor(Color.white)
                         .multilineTextAlignment(.center)
                         .padding(.all)
-                        .font(.system(size: 75))
+                        .font(.system(size: 65))
                         .shadow(color: Color.black,
                                 radius: 4, x: 6.5 , y: 6.5)
                     
