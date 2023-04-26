@@ -4,7 +4,7 @@ import SwiftUI
 struct NBAGuesser: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            StartScreen()
         }
     }
 }
